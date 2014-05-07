@@ -25,18 +25,21 @@ class db{
 	private function connect(){
 		// production
 		
+		/*
 		$connect_config = array('connection'=>'localhost',
 							'user' => 'poweruni_sales',
 							'password' => 'uM55WwDq28p9NX8E',
 							'database' => 'poweruni_niu_sales'); 
 		 
+		 * 
+		 */
 		// local	
-		/*		
+				
 		$connect_config = array('connection'=>'localhost',
-							'user' => 'sales_usr',
-							'password' => 'uM55WwDq28p9NX8E',
-							'database' => 'niu_sales'); 
-		*/
+							'user' => 'root',
+							'password' => '',
+							'database' => 'poweruni_niu_sales'); 
+		
 							
 		$mysqli = new mysqli($connect_config['connection'], $connect_config['user'], $connect_config['password'], $connect_config['database']);
 		if ($mysqli->connect_errno) {
